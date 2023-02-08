@@ -1,4 +1,44 @@
-body {
-    background-color: rgb(0, 14, 14);
-    color: #fff;
-}
+:root {
+    --primery-text-color: #757575; 
+    --title-text-color: #212121;
+    --accent-color:  #2196F3; 
+    --primery-White-color: #ffffff;
+  }
+  
+/* Основной цвет текста */
+  .page{
+    color: var(--primery-text-color);
+  }
+/* Списки  */
+  .list {
+    list-style: none;
+  }
+
+  /* Ссылки навигации */
+
+   .link{
+    color:#000000;
+  }
+  .list .link{
+    color: var(--title-text-color);
+  }
+  .list .link:hover{
+    color: var(--accent-color);
+  }
+  .list .link.current {
+    color: var(--accent-color);
+  }
+
+  /* Герой */
+  .hero-title{
+    color: var(--primery-White-color);
+    background-color: #2F303A;
+  }
+
+
+  /* Особливості (section) */
+  .section .title{
+    color: var(--title-text-color);
+  }
+
+
