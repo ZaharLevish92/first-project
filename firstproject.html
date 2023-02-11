@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>WebStudio</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="page">
     <!-- Шапка сайта -->
     <header class="">
-      <nav >
-        <a href="" class="link">WebStudio</a>
+      <nav>
+        <a href="" class="logo">Web<span class="studio">Studio</span></a>
         <ul class="list">
           <li>
             <a class="link current" href="">Студія</a>
           </li>
           <li>
-            <a class="link" href="./portfolio.html" target="_blank">Портфоліо</a>
+            <a class="link" href="./portfolio.html" target="_blank"
+              >Портфоліо</a
+            >
           </li>
 
           <li>
@@ -25,8 +31,12 @@
           </li>
         </ul>
       </nav>
-      <ul class="list" >
-        <li ><a href="mailto:info@devstudio.com" class=" link current" >info@devstudio.com</a></li>
+      <ul class="list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link current"
+            >info@devstudio.com</a
+          >
+        </li>
         <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
@@ -34,13 +44,13 @@
       <!-- Герой -->
       <section>
         <div>
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button">Замовити послугу</button>
         </div>
       </section>
       <!--Особливості-->
-      <section class="section">
-        <h2 >Особливості</h2>
+      <section class="particularities">
+        <h2 class="title">Особливості</h2>
         <ul class="list">
           <li>
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -89,33 +99,33 @@
       <!--Наша команда-->
       <section class="section">
         <h2 class="title">Наша команда</h2>
-        <ul class="list">
+        <ul class="ourteam list">
           <li>
             <div>
               <img src="/image/photo(1).jpg" alt="" width="270" />
               <h3 class="title">Ігор Дем'яненко</h3>
-              <p>Product Designer</p>
+              <p class="text">Product Designer</p>
             </div>
           </li>
           <li>
             <div>
               <img src="/image/photo(2).jpg" alt="" width="270" />
               <h3 class="title">Ольга Рєпіна</h3>
-              <p>Frontend Developer</p>
+              <p class="text">Frontend Developer</p>
             </div>
           </li>
           <li>
             <div>
               <img src="/image/photo(3).jpg" alt="" width="270" />
               <h3 class="title">Микола Тарасов</h3>
-              <p>Marketing</p>
+              <p class="text">Marketing</p>
             </div>
           </li>
           <li>
             <div>
               <img src="/image/photo(4).png" alt="" width="270" />
               <h3 class="title">Михайло Єрмаков</h3>
-              <p>UI Designer</p>
+              <p class="text">UI Designer</p>
             </div>
           </li>
         </ul>
@@ -124,11 +134,21 @@
     <!-- Футер-->
     <footer>
       <div>
-        <p>WebStudio</p>
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
+        <p class="logo2">Web<span class="studio2">Studio</span></p>
+        <p class="adrs">м. Київ, пр-т Лесі Українки, 26</p>
         <address>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <ul class="list">
+            <li>
+              <a class="mailphone" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mailphone" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </address>
       </div>
     </footer>
