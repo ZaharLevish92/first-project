@@ -108,9 +108,6 @@ body {
   color: var(--primery-text-color);
 }
 
-
-
-
 /* Footer */
 .footer {
   background-color: var(--footer-color);
@@ -137,12 +134,12 @@ body {
   letter-spacing: 0.03em;
 }
 .list .adress {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }

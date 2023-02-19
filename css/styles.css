@@ -5,6 +5,16 @@
   --primery-White-color: #ffffff;
 }
 
+.page-header {
+}
+
+.conteyner {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
 /* Основной цвет текста */
 body {
   color: var(--primery-text-color);
@@ -25,11 +35,20 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
 }
 
 /* Списки  */
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.no-margin {
+  
+  margin-bottom: 0;
 }
 
 /*Header Ссылки навигации */
@@ -64,9 +83,11 @@ body {
 }
 
 /* Герой */
+.hero {
+  background-color: var(--title-text-color);
+}
 .hero.title {
   color: var(--primery-White-color);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -74,6 +95,19 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.conteyner.hero {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.conteyner > .title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Особливості (section) */
 
@@ -84,25 +118,33 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Чим ми займаємося */
 
-.section > .title {
+.section .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Наша Команда*/
+.section-our-team {
+  background-color: section-our-team;
+}
+
 .ourteam .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.14px;
-  /* identical to box height */
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .ourteam .text {
   font-weight: 400;
@@ -111,6 +153,9 @@ body {
   letter-spacing: 0.03em;
 }
 /* Footer */
+.footer {
+  background-color: #2f303a;
+}
 .logo2 {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -120,6 +165,9 @@ body {
   line-height: 1.2;
 
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .studio2 {
   color: var(--primery-White-color);
@@ -129,11 +177,13 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .adrs {
   color: var(--primery-White-color);
-  background-color: var(--title-text-color);
 
   font-weight: 400;
   font-size: 14px;
@@ -142,7 +192,6 @@ body {
 }
 .mailphone {
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

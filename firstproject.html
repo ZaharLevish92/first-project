@@ -19,37 +19,39 @@
   </head>
   <body class="page">
     <!-- Шапка сайта -->
-    <header class="">
-      <nav>
-        <a href="" class="logo">Web<span class="studio">Studio</span></a>
+    <header class="page-header">
+      <div class="conteyner">
+        <nav >
+          <a href="" class="logo">Web<span class="studio">Studio</span></a>
+          <ul class="list">
+            <li>
+              <a class="link current" href="">Студія</a>
+            </li>
+            <li>
+              <a class="link" href="./portfolio.html" target="_blank"
+                >Портфоліо</a
+              >
+            </li>
+  
+            <li>
+              <a class="link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="list">
           <li>
-            <a class="link current" href="">Студія</a>
-          </li>
-          <li>
-            <a class="link" href="./portfolio.html" target="_blank"
-              >Портфоліо</a
+            <a href="mailto:info@devstudio.com" class="link current"
+              >info@devstudio.com</a
             >
           </li>
-
-          <li>
-            <a class="link" href="">Контакти</a>
-          </li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link current"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Герой -->
-      <section>
-        <div>
+      <section class="hero">
+        <div class="conteyner hero">
           <h1 class="hero title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button">Замовити послугу</button>
         </div>
@@ -57,9 +59,11 @@
       <!--Особливості-->
 
       <section class="particularities">
-        <h2 class="title">Особливості</h2>
+        <div class="conteyner">
+          <h2 class="title">Особливості</h2>
         <ul class="list">
           <li>
+            <img src="./image/antenna 1.png" alt="" width="70" height="70">
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p>
               Ідейні міркування, і навіть початок повсякденної роботи з
@@ -67,6 +71,7 @@
             </p>
           </li>
           <li>
+            <img src="./image/clock 1.png" alt=""  width="70" height="70">
             <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
             <p>
               Завдання організації, особливо рамки і місце навчання кадрів тягне
@@ -74,23 +79,27 @@
             </p>
           </li>
           <li>
+            <img src="./image/diagram 1.png" alt=""  width="70" height="70">
             <h3 class="title">ПЛАНУВАННЯ</h3>
             <p>
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li >
+            <img src="./image/astronaut 1.png" alt=""  width="70" height="70">
             <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
+            <p class="no-margin" >
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--Чим ми займаємося-->
       <section class="section">
-        <h2 class="title">Чим ми займаємося</h2>
+        <div class="conteyner">
+          <h2 class="title">Чим ми займаємося</h2>
         <ul class="list">
           <li>
             <img src="/image/img.png" alt="" width="370" height="294" />
@@ -102,10 +111,12 @@
             <img src="/image/img(2).png" alt="" width="370" height="294" />
           </li>
         </ul>
+        </div>
       </section>
       <!--Наша команда-->
       <section class="section">
-        <h2 class="title">Наша команда</h2>
+        <div class="conteyner">
+          <h2 class="title">Наша команда</h2>
         <ul class="ourteam list">
           <li>
             <div>
@@ -132,15 +143,16 @@
             <div>
               <img src="/image/photo(4).png" alt="" width="270" />
               <h3 class="title">Михайло Єрмаков</h3>
-              <p class="text">UI Designer</p>
+              <p class="text no-margin">UI Designer</p>
             </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- Футер-->
-    <footer>
-      <div>
+    <footer class="footer">
+      <div class="conteyner">
         <p class="logo2">Web<span class="studio2">Studio</span></p>
         <p class="adrs">м. Київ, пр-т Лесі Українки, 26</p>
         <address>
