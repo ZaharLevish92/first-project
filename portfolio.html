@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/stylesportfolio.css" />
   </head>
   <body>
     <header class="">
       <nav>
-        <a href="" class="link">WebStudio</a>
+        <a href="" class="logo">Web<span class="studio">Studio</span></a>
         <ul class="list">
           <li>
             <a class="link current" href="">Студія</a>
@@ -35,16 +45,16 @@
     <main>
       <section>
         <h1>Портфоліо</h1>
-        <ul>
-          <li><button type="button">Усі</button></li>
-          <li><button type="button">Веб-сайти</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <ul class="list">
+          <li><button type="button" class="button">Усі</button></li>
+          <li><button type="button" class="button">Веб-сайти</button></li>
+          <li><button type="button" class="button">Додатки</button></li>
+          <li><button type="button" class="button">Дизайн</button></li>
+          <li><button type="button" class="button">Дизайн</button></li>
+          <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
 
-        <ul>
+        <ul class="list">
           <li>
             <a href="">
               <img
@@ -53,8 +63,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
+              <h2 class="title">Технокряк</h2>
+              <p class="text">Веб-сайт</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                 autem dignissimos nihil voluptates facilis ducimus, fugiat porro
@@ -70,8 +80,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <h2 class="title">Постер New Orlean vs Golden Star</h2>
+              <p class="text">Дизайн</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -87,8 +97,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Ресторан Seafood</h2>
-              <p>Додаток</p>
+              <h2 class="title">Ресторан Seafood</h2>
+              <p class="text">Додаток</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -104,8 +114,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Проєкт Prime</h2>
-              <p>Маркетинг</p>
+              <h2 class="title">Проєкт Prime</h2>
+              <p class="text">Маркетинг</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -121,8 +131,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Проєкт Boxes</h2>
-              <p>Додаток</p>
+              <h2 class="title">Проєкт Boxes</h2>
+              <p class="text">Додаток</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -138,8 +148,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <h2 class="title">Inspiration has no Borders</h2>
+              <p class="text">Веб-сайт</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -155,8 +165,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Видання Limited Edition</h2>
-              <p>Дизайн</p>
+              <h2 class="title">Видання Limited Edition</h2>
+              <p class="text">Дизайн</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -172,8 +182,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Проєкт LAB</h2>
-              <p>Маркетинг</p>
+              <h2 class="title">Проєкт LAB</h2>
+              <p class="text">Маркетинг</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -189,8 +199,8 @@
                 width="370"
                 height="294"
               />
-              <h2>Growing Business</h2>
-              <p>Додаток</p>
+              <h2 class="title">Growing Business</h2>
+              <p class="text">Додаток</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis temporibus nemo, incidunt sit minima debitis ducimus
@@ -202,13 +212,15 @@
       </section>
     </main>
     <!-- Футер-->
-    <footer>
+    <footer class="footer">
       <div>
-        <p>WebStudio</p>
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
+        <p class="logo2">Web<span class="studio2">Studio</span></p>
+        <p class="adress">м. Київ, пр-т Лесі Українки, 26</p>
         <address>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <ul class="list">
+            <li ><a class="adress" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li ><a class="adress" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
         </address>
       </div>
     </footer>
