@@ -25,7 +25,13 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
 }
-
+/* Списки */
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 
 .conteyner {
   width: 1170px;
@@ -35,35 +41,82 @@ body {
 }
 
 /* HEADER */
-.head.conteyner{
+.head.conteyner {
   display: flex;
   padding-top: 25px;
   padding-bottom: 25px;
   align-items: center;
 }
-.headflex{
+.headflex {
   display: flex;
   text-align: center;
 }
-.headflex .list{
+.headflex .list {
   display: flex;
   margin-left: 105px;
 }
-.nav .item{
+.nav .item {
   /* padding-left: 0px; */
 }
-.nav .item:not(:first-child){
-  margin-left:50px ;
+.nav .item:not(:first-child) {
+  margin-left: 50px;
 }
-  
-.adress.list{
-  display: flex;
+/* .adrs{ 
+  color: var(--primery-White-color);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.71;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+
+ } */
+
+.adress.list {
   margin-left: auto;
+  margin-bottom: 60px;
 }
-.adress .item{
+.adress .item {
   margin-left: 50px;
 }
 
+.mailphone-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.mailphone-nav .link {
+  padding: 0;
+  border: 0;
+}
+.mailphone-nav .link:nth-child(2n + 1) {
+  margin-right: 10px;
+}
+
+.mrg {
+  margin-right: 30px;
+}
+
+.svglink {
+  display: flex;
+  align-items: flex-end;
+}
+.headicon {
+  display: inline-flex;
+  padding: 0;
+  vertical-align: middle;
+  width: 20px;
+  height: 16px;
+}
+
+.svglink:hover > a {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 .logo {
   text-decoration: none;
@@ -99,38 +152,86 @@ body {
 }
 
 /* Main */
-.navigation{
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation {
   display: flex;
   justify-content: center;
   padding-top: 100px;
   margin-bottom: 50px;
 }
 
-
-.photo{
+.photo {
   display: flex;
   flex-wrap: wrap;
-  
+
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 65px;
 }
-.photo .item{
-  background-color: #fff;
+
+.overlay:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 294px;
+  background-color: var(--accent-color);
+  opacity: 0;
 }
-.photo .item:not(:nth-child(3n)){
-  margin-right: 30px; 
+.overlay:hover::before {
+  opacity: 1;
 }
-.photo .item:not(:nth-last-child(-n + 3)){
+
+.overlay:hover .lorem {
+  opacity: 1;
+}
+
+.lorem {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 3%;
+  color: var(--primery-white-color);
+  top: 55px;
+  left: 25px;
+  opacity: 0;
+}
+
+.photo .photocard {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
+}
+
+.photo .photocard:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.photo .photocard:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-
-
 .portfoliotitle {
   margin: 0;
 }
 
-.list .button {
+.button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -140,7 +241,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--primery-title-color);
+  color: var(--primery-text-color);
   background-color: var(--secondary-bg-color);
 
   display: inline-block;
@@ -150,9 +251,11 @@ body {
   padding-left: 24px;
   border-radius: 4px;
   border: none;
+
+  margin-right: 10px;
 }
 
-.list .button:hover {
+.button:hover {
   color: var(--primery-white-color);
   background-color: var(--accent-color);
 }
@@ -165,6 +268,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 20px;
 }
 
 .list .text {
@@ -175,48 +279,134 @@ body {
   line-height: 1.86;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+  margin-left: 20px;
 }
-
-.lastchild {
+*/ .lastchild {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* Footer */
+
 .footer {
-  background-color: var(--footer-color);
+  background-color: #2f303a;
+}
+.conteyner.footer {
+  display: flex;
+  padding-top: 65px;
 }
 
 .logo2 {
   color: var(--accent-color);
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: Raleway, sans-serif;
+
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.2;
+
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.studio2 {
+  color: var(--primery-white-color);
+  background-color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.studio2 {
+.adrs {
   color: var(--primery-white-color);
-}
-.footer .adress {
-  color: var(--primery-white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-.list .adress {
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.mailphone {
+  font-family: "Roboto";
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
+}
 
-  color: rgba(255, 255, 255, 0.6);
+.footertext {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-left: 95px;
+}
+.footer.list {
+  display: flex;
+  margin-left: 95px;
+}
+
+.icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+}
+.icon:not(:nth-child(4n)) {
+  margin-right: 10px;
+}
+
+.icon-one {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  fill: var(--primery-white-color);
+}
+.icon-two {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  fill: var(--primery-white-color);
+}
+
+.icon-three {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  fill: var(--primery-white-color);
+}
+.icon-four {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  fill: var(--primery-white-color);
+}
+
+.icon:hover,
+.icon:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
