@@ -10,9 +10,10 @@
 
 .conteyner {
   width: 1170px;
+
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 /* Основной цвет текста */
@@ -58,23 +59,34 @@ body {
 }
 
 /*Header Ссылки навигации */
-.conteyner.navigetion {
+.head.conteyner {
   display: flex;
-  align-items: center;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
+  align-items: baseline;
 }
-.navigetion {
+.headflex {
   display: flex;
-  align-items: center;
+  text-align: center;
 }
-.site-nav {
+.headflex .list {
   display: flex;
-  margin-left: 95px;
+  margin-left: 105px;
+  margin-top: 3px;
 }
-.site-nav .link {
+
+.nav .item:not(:first-child) {
   margin-left: 50px;
 }
+
+.adress.list {
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+.adress .item {
+  margin-left: 50px;
+}
+
 .mailphone-nav {
   display: flex;
   margin-left: auto;
@@ -110,38 +122,56 @@ body {
   fill: var(--accent-color);
 }
 
-.list .link {
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.studio {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.list .link {
+  text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  color: var(--primery-title-color);
 }
+
 .list .link:hover,
 .list .link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
-}
-.logo {
-  color: var(--title-text-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-.studio {
-  color: var(--accent-color);
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
+.list .link.active {
+  display: inline-block;
+  color: var(--accent-color);
+  margin-right: 0;
+}
+.link.active:after {
+  display: block;
+  content: "";
+
+  width: 100%;
+  height: 5px;
+
+  background-color: var(--accent-color);
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
 /* Герой */
 .hero {
   background-color: var(--title-text-color);
@@ -525,6 +555,9 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-top: 10px;
+}
+.mailphone:hover {
+  color: var(--accent-color);
 }
 
 .footertext {
