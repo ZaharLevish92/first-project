@@ -519,16 +519,101 @@
             </li>
           </ul>
         </div>
+        <div class="mailformdiv">
+          <form class="footer-form" action="">
+            <label for="email">Підпишіться на розсилку</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </form>
+          <button class="button-form">Підписатися</button>
+        </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <batton class="modalbutton" data-close-modal>Відправити</batton>
+        <button class="close" data-close-modal>
+          <svg class="iconvector">
+            <use href="./image/symbol-defstwo.svg#iconVector"></use>
+          </svg>
+        </button>
+
+        <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="form" action="" autocomplete="on">
+          <div class="form-field">
+            <input placeholder=" " type="name" name="name" id="name" />
+            <label class="textlebel" for="name">Ім'я</label>
+
+            <svg class="iconvectortwo">
+              <use href="./image/symbol-defstwo.svg#iconpeopleform"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input placeholder=" " type="tel" name="tel" id="tel" />
+            <label class="textlebel" for="tel">Телефон</label>
+
+            <svg class="iconvectortwo">
+              <use href="./image/symbol-defstwo.svg#iconphoneform"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <input placeholder=" " type="email" name="email" id="email" />
+            <label class="textlebel" for="email">Пошта</label>
+
+            <svg class="iconvectortwo">
+              <use href="./image/symbol-defstwo.svg#iconemailform"></use>
+            </svg>
+          </div>
+          <div class="form-field-two">
+            <textarea
+              class="text"
+              name=""
+              id="coment"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <label class="coment" for="coment"> Коментар </label>
+          </div>
+          <label class="check" for="checkbox">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
+            <span class="customcheckbox"></span>
+            Погоджуюся з розсилкою та приймаю
+            <a class="colorlink" href="">Умови договору</a></label
+          >
+
+          <button class="modalbutton" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
+    <!-- скрипт модального окна -->
     <script>
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackDropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+      function logBackDropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
         closeModalBtn: document.querySelector("[data-close-modal]"),
         backdrop: document.querySelector("[data-backdrop]"),
       };
