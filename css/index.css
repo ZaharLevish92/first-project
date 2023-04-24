@@ -508,6 +508,21 @@ body {
 .adress {
   margin-bottom: 60px;
 }
+.mailphone-nav .link {
+  padding: 0;
+  border: 0;
+}
+.mailphone-nav .link:nth-child(2n + 1) {
+  margin-right: 10px;
+}
+
+.adress.list {
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+.adress .item {
+  margin-left: 50px;
+}
 .adrs {
   color: var(--primery-White-color);
 
@@ -605,6 +620,7 @@ body {
   flex-direction: column;
   margin-left: 90px;
 }
+
 .button-form {
   color: var(--primery-White-color);
   background-color: var(--accent-color);
@@ -669,7 +685,6 @@ body {
 }
 
 .backdrop.is-hidden .modal {
- 
   transform: translate(-50%, -50%) scale(1.1);
   opacity: 0;
 }
@@ -819,7 +834,6 @@ body {
 .form-field input:focus + .textlebel,
 .form-field input:not(:placeholder-shown) + .textlebel {
   transform: translate(-25px, -50px);
-  
 }
 /* аналог .form-field input:focus > .iconvectortwo  */
 .form-field:focus-within > .iconvectortwo {

@@ -15,50 +15,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/stylesportfolio.css" />
+    <link rel="stylesheet" href="./css/mainPortfolio.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="outline-header">
-        <div class="head conteyner">
-          <nav class="headflex">
-            <a href="" class="logo">Web<span class="studio">Studio</span></a>
-            <ul class="nav list">
-              <li class="item">
-                <a class="link current" href="./index.html">Студія</a>
-              </li>
-              <li class="item">
-                <a class="link active" href="./portfolio.html">Портфоліо</a>
-              </li>
+    <header class="">
+      <div class="header">
+        <nav class="header-navigation">
+          <a href="" class="logo">Web<span class="studio">Studio</span></a>
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-link header-link_active" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./portfolio.html">Портфоліо</a>
+            </li>
 
-              <li class="item">
-                <a class="link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="mailphone-nav list">
-            <li class="svglink mrg">
+            <li class="header-item">
+              <a class="header-link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li class="contact-item contact-item__mrg">
+            <div class="contact-svglink">
               <a href="" class="link">
-                <svg class="headicon">
+                <svg class="contact-icon">
                   <use href="./image/symbol-defs.svg#iconmail"></use>
                 </svg>
               </a>
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
-            </li>
-            <li>
-              <div class="svglink">
-                <a href="" class="link">
-                  <svg class="headicon">
-                    <use href="./image/symbol-defs.svg#iconsmartphone"></use>
-                  </svg>
-                </a>
-                <a href="tel:+380961111111" class="link"> +38 096 111 11 11</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact-svglink">
+              <a href="" class="link">
+                <svg class="contact-icon">
+                  <use href="./image/symbol-defs.svg#iconsmartphone"></use>
+                </svg>
+              </a>
+              <a href="tel:+380961111111" class="link"> +38 096 111 11 11</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -66,17 +68,27 @@
       <section>
         <div class="conteyner">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="navigation list">
-            <li><button type="button" class="button">Усі</button></li>
-            <li><button type="button" class="button">Веб-сайти</button></li>
-            <li><button type="button" class="button">Додатки</button></li>
-            <li><button type="button" class="button">Дизайн</button></li>
-            <li><button type="button" class="button">Маркетинг</button></li>
+          <ul class="navigation">
+            <li>
+              <button type="button" class="navigation-button">Усі</button>
+            </li>
+            <li>
+              <button type="button" class="navigation-button">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="navigation-button">Додатки</button>
+            </li>
+            <li>
+              <button type="button" class="navigation-button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="navigation-button">Маркетинг</button>
+            </li>
           </ul>
 
-          <ul class="photo list">
-            <li class="photocard">
-              <div class="perent">
+          <ul class="photoSet">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(1).png"
@@ -96,8 +108,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(2).png"
@@ -117,8 +129,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(3).png"
@@ -138,8 +150,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(4).png"
@@ -159,8 +171,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(5).png"
@@ -180,8 +192,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(6).png"
@@ -201,8 +213,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(7).png"
@@ -222,8 +234,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(8).png"
@@ -243,8 +255,8 @@
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </li>
-            <li class="photocard">
-              <div class="perent">
+            <li class="photoSet-item">
+              <div class="photoSet-div">
                 <img
                   class="img"
                   src="./image/portfolio(9).png"
@@ -271,65 +283,88 @@
 
     <!-- Футер-->
     <footer class="footer">
-      <div class="conteyner footer">
-        <div class="footone">
-          <p class="logo2">Web<span class="studio2">Studio</span></p>
+      <div class="footer-conteyner">
+        <div>
+          <p class="footerLogo">
+            Web<span class="footerLogo-studio">Studio</span>
+          </p>
           <address>
-            <p class="adrs">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="footerLogo-address">м. Київ, пр-т Лесі Українки, 26</p>
 
-            <ul class="adress list">
+            <ul class="addressList">
               <li>
-                <a class="mailphone" href="mailto:info@devstudio.com"
+                <a class="addressList-item" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="mailphone" href="tel:+380961111111"
+                <a class="addressList-item margin" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="foottwo">
-          <p class="footertext">Приєднуйтесь</p>
-          <ul class="footer list">
-            <li class="icon">
-              <a href=""
-                ><svg class="icon-one">
+        <div class="join">
+          <p class="join-text">Приєднуйтесь</p>
+          <ul class="linkList">
+            <li class="linkList-icon">
+              <a
+                href=" https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><svg class="linkList-svg">
                   <use href="./image/symbol-defs.svg#iconinstagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon">
-              <a href=""
-                ><svg class="icon-two">
+            <li class="linkList-icon">
+              <a
+                href=" https://twitter.com/i/flow/login"
+                target="_blank"
+                rel="noreferrer noopener"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><svg class="linkList-svg">
                   <use href="./image/symbol-defs.svg#icontwitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon">
-              <a href=""
-                ><svg class="icon-three">
+            <li class="linkList-icon">
+              <a
+                href="https://ru-ru.facebook.com/login.php"
+                target="_blank"
+                rel="noreferrer noopener"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><svg class="linkList-svg">
                   <use href="./image/symbol-defs.svg#iconfacebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon">
-              <a href="">
-                <svg class="icon-four">
+            <li class="linkList-icon">
+              <a
+                href="https://ua.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="linkList-svg">
                   <use href="./image/symbol-defs.svg#iconlinkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="mailformdiv">
-          <form class="footer-form" action="">
+        <div class="formDiv">
+          <form class="formDiv-form" action="">
             <label for="email">Підпишіться на розсилку</label>
             <input type="email" name="email" id="email" placeholder="E-mail" />
           </form>
-          <button class="button-form">Підписатися</button>
+          <button class="formDiv-button">Підписатися</button>
         </div>
       </div>
     </footer>

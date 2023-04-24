@@ -1,0 +1,93 @@
+.client-conteyner {
+  @extend %conteyner;
+}
+
+.client-title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 95px;
+}
+.clientList {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding-bottom: 100px;
+
+  &-item {
+    display: block;
+    height: 92px;
+    width: 170px;
+    border-radius: 10px;
+    border: 1px solid #afb1b8;
+
+     &:hover {
+       border-color:$accent-color;
+     }
+  }
+
+  &-item:not(:nth-child(6n)) {
+    margin-right: 30px;
+  }
+  &-icon {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 53px;
+    height: 49px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill:$accent-color;
+    }
+  }
+
+  &-iconfour {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 105px;
+    height: 90px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill:$accent-color;
+    }
+  }
+
+  &-iconfive {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 95px;
+    height: 65px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill:$accent-color;
+    }
+  }
+
+  &-iconsix {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 105px;
+    height: 90px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill:$accent-color;
+    }
+  }
+}

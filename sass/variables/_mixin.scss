@@ -1,0 +1,13 @@
+@mixin generateicons($icons) {
+    @each $iconname in $icons {
+      .icon-#{$iconname} {
+        background-image: url(/image/#{$iconname}.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        vertical-align: center;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
