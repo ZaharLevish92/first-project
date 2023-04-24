@@ -318,7 +318,7 @@ body {
 }
 
 .icon-antenna {
-  background-image: url(/image/antenna.svg);
+  background-image: url(./image/antenna.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-box-align: center;
@@ -330,7 +330,7 @@ body {
 }
 
 .icon-clock {
-  background-image: url(/image/clock.svg);
+  background-image: url(./image/clock.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-box-align: center;
@@ -342,7 +342,7 @@ body {
 }
 
 .icon-diagram {
-  background-image: url(/image/diagram.svg);
+  background-image: url(./image/diagram.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-box-align: center;
@@ -354,7 +354,7 @@ body {
 }
 
 .icon-clock {
-  background-image: url(/image/clock.svg);
+  background-image: url(./image/clock.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-box-align: center;
