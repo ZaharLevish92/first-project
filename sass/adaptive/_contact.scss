@@ -1,0 +1,63 @@
+.contact {
+  @extend %list;
+
+  
+
+  &-item {
+    display: block;
+    align-items: flex-end;
+  }
+  &-item__mrg {
+    margin-right: 30px;
+  }
+  &-icon {
+    display: none;
+    padding: 0;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: center;
+
+    @media screen and (min-width: 767px) {
+      display: inline-block;
+    }
+  }
+  &-svglink:hover > a {
+    color: $accent-color;
+    fill: $accent-color;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+    margin-left: 85px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 315px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primery-text-color;
+}
+
+.link:hover,
+.list .link:focus {
+  color: $accent-color;
+}
+
+.link.active {
+  display: inline-block;
+  color: $accent-color;
+  margin-right: 0;
+}

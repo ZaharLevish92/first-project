@@ -14,54 +14,78 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/adaptive.min.css" />
     <title>WebStudio</title>
   </head>
   <body class="page">
     <!-- Шапка сайта -->
-    <header class="">
+    <header class="main-header">
       <div class="header">
-        <nav class="header-navigation">
-          <a href="" class="logo">Web<span class="studio">Studio</span></a>
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link header-link_active" href="./index.html"
+        <a href="" class="logo">Web<span class="logo-studio">Studio</span></a>
+        <button
+          class="header-button is-open"
+          type="button"
+          aria-expanded="true"
+          data-menu-button
+        >
+          <svg
+            aria-lebel="Переключатель мобильного меню"
+            height="16"
+            width="24"
+          >
+            <use
+              class="icon-close"
+              href="./image/modalSvg/symbol-defs.svg#iconclose"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./image/modalSvg/symbol-defs.svg#iconmenu"
+            ></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a
+                class="navigation-link navigation-link_active"
+                href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="header-item">
-              <a class="header-link" href="./portfolio.html">Портфоліо</a>
+            <li class="navigation-item">
+              <a class="navigation-link" href="./portfolio.html">Портфоліо</a>
             </li>
 
-            <li class="header-item">
-              <a class="header-link" href="">Контакти</a>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="contact">
+            <li class="contact-item contact-item__mrg">
+              <div class="contact-svglink">
+                <a href="" class="link">
+                  <svg class="contact-icon">
+                    <use href="./image/symbol-defs.svg#iconmail"></use>
+                  </svg>
+                </a>
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="contact-svglink">
+                <a href="" class="link">
+                  <svg class="contact-icon">
+                    <use href="./image/symbol-defs.svg#iconsmartphone"></use>
+                  </svg>
+                </a>
+                <a href="tel:+380961111111" class="link"> +38 096 111 11 11</a>
+              </div>
             </li>
           </ul>
         </nav>
-        <ul class="contact">
-          <li class="contact-item contact-item__mrg">
-            <div class="contact-svglink">
-              <a href="" class="link">
-                <svg class="contact-icon">
-                  <use href="./image/symbol-defs.svg#iconmail"></use>
-                </svg>
-              </a>
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </div>
-          </li>
-          <li>
-            <div class="contact-svglink">
-              <a href="" class="link">
-                <svg class="contact-icon">
-                  <use href="./image/symbol-defs.svg#iconsmartphone"></use>
-                </svg>
-              </a>
-              <a href="tel:+380961111111" class="link"> +38 096 111 11 11</a>
-            </div>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -623,5 +647,7 @@
         console.log("Это клик в бекдроп");
       }
     </script>
+
+    <script src="./JS/menuOpen.js"></script>
   </body>
 </html>
