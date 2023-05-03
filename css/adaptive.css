@@ -57,6 +57,7 @@ body {
   padding-bottom: 25px;
   margin-left: 15px;
   margin-right: 15px;
+  background-color: thistle;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -64,6 +65,14 @@ body {
 @media screen and (min-width: 480px) {
   .header {
     width: 450px;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    position: relative;
+  }
+}
+@media screen and (min-width: 510px) {
+  .header {
+    width: 480px;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
     position: relative;
