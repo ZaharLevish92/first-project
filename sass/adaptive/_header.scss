@@ -1,33 +1,39 @@
 .main-header {
   position: relative;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #ececec;
 }
 
 .header {
-  width: 100%;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-left: 15px;
   margin-right: 15px;
+  
 
-  padding-top: 25px;
-
-  border-bottom: 1px solid #ececec;
+  justify-content: space-between;
+  
 
   @media screen and (min-width: 480px) {
     width: 450px;
-    height: 60px;
+    padding-inline-start: 0;
     position: relative;
   }
 
   @media screen and (min-width: 768px) {
-   
-    position: relative;
-    width: 738px;
     height: 80px;
     
+    width: 738px;
+
+    
+    padding-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1170px;
-    height: 85px;
+
     margin-left: auto;
     margin-right: auto;
   }

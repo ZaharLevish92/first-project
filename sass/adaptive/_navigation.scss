@@ -1,18 +1,28 @@
 .navigation {
-  position: relative;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 480px;
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 480px;
 
-  display: none;
+    display: none;
+  }
   &-list {
     @extend %list;
     display: block;
 
     @media screen and (min-width: 767px) {
       display: flex;
+      margin-right: 250px;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 650px;
+    }
+
+    
+
   }
 
   @media screen and (min-width: 767px) {
@@ -50,23 +60,21 @@
 
         background-color: $accent-color;
         border-radius: 3px;
-        margin-top: 30px;
+        margin-top: 25px;
         margin-bottom: 0;
       }
     }
   }
 
+  @media screen and (min-width: 480px) {
+    display: none;}
+
   @media screen and (min-width: 768px) {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 225px;
-    height: 100%;
-    align-items: center;
+   display: flex;
+   
+    
   }
 
   @media screen and (min-width: 1200px) {
-    align-items: baseline;
-  padding-top: 10px;}
-
+  }
 }
