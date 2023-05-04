@@ -75,20 +75,6 @@ body {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: 820px) {
-  .header {
-    height: 80px;
-    width: 790px;
-    padding-bottom: 0;
-  }
-}
-@media screen and (min-width: 850px) {
-  .header {
-    height: 80px;
-    width: 820px;
-    padding-bottom: 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header {
     width: 1170px;
