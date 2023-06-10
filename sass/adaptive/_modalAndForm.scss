@@ -24,7 +24,7 @@
 
 .modal {
   position: absolute;
-
+  z-index: 2;
   top: 50%;
   left: 50%;
   background-color: $primery-White-color;
