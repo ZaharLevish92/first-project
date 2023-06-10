@@ -1294,7 +1294,7 @@ body.modal-open {
 
 .modal {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 50%;
   left: 50%;
   background-color: #ffffff;
