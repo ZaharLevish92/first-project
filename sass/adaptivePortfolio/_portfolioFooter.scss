@@ -10,7 +10,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 1px solid tomato;
+  
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -227,6 +227,7 @@
     }
 
     input {
+      color: white;
       height: 45px;
       width: 100%;
       background-color: #2f303a;

@@ -76,7 +76,6 @@ body.modal-open {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .header {
@@ -389,7 +388,6 @@ body.modal-open {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../adaptive_images/Header imgbackground_phone.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../adaptive_images/Header imgbackground_phone.jpg");
   background-repeat: no-repeat;
@@ -539,7 +537,6 @@ body.modal-open {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .particularities-conteyner {
@@ -755,7 +752,6 @@ body.modal-open {
 .ourteam-conteyner {
   width: 100%;
   text-align: center;
-  outline: 1px solid tomato;
   margin: auto;
 }
 @media screen and (max-width: 767px) {
@@ -875,7 +871,6 @@ body.modal-open {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -951,9 +946,7 @@ body.modal-open {
   fill: #2196f3;
 }
 .clientList-iconfour {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   width: 105px;
@@ -964,9 +957,7 @@ body.modal-open {
   fill: #2196f3;
 }
 .clientList-iconfive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
@@ -978,9 +969,7 @@ body.modal-open {
   fill: #2196f3;
 }
 .clientList-iconsix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   width: 105px;
@@ -1002,7 +991,6 @@ body.modal-open {
   padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .footer-conteyner {
@@ -1298,6 +1286,7 @@ body.modal-open {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
+  z-index: 2;
   -webkit-transform: translate(-50%, -50%) scale(1.1);
           transform: translate(-50%, -50%) scale(1.1);
   opacity: 0;

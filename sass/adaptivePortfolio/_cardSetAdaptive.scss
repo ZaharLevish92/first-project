@@ -140,18 +140,18 @@
   margin-bottom: 0;
 }
 
-.img{
-  @media screen and (max-width: 767px) {
-    max-width: 100%;
-    height: auto;
-  }
-
+.img {
+  width: 100%;
+  height: auto;
 }
 
-.title{
+.title {
   margin-left: 24px;
 }
 
-.text{
+.text {
   margin-left: 24px;
+}
+.teamList-photo{
+  width: 100%;
 }

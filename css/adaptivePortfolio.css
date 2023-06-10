@@ -69,7 +69,6 @@ body.modal-open {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .header {
@@ -379,7 +378,6 @@ body.modal-open {
 .conteyner {
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .conteyner {
@@ -606,11 +604,9 @@ body.modal-open {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .img {
-    max-width: 100%;
-    height: auto;
-  }
+.img {
+  width: 100%;
+  height: auto;
 }
 
 .title {
@@ -619,6 +615,10 @@ body.modal-open {
 
 .text {
   margin-left: 24px;
+}
+
+.teamList-photo {
+  width: 100%;
 }
 
 .footer {
@@ -632,7 +632,6 @@ body.modal-open {
   padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .footer-conteyner {
@@ -843,6 +842,7 @@ body.modal-open {
   }
 }
 .formDiv-form input {
+  color: white;
   height: 45px;
   width: 100%;
   background-color: #2f303a;

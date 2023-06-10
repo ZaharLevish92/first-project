@@ -21,6 +21,7 @@
   
   .modal {
     position: absolute;
+    z-index: 3;
   
     top: 50%;
     left: 50%;
@@ -261,4 +262,4 @@
       color: #2196f3;
     }
   }
-  
+}
