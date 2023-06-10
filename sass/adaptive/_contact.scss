@@ -1,9 +1,48 @@
 .contact {
-   @extend %list;
+  @extend %list;
 
   &-item {
     display: block;
-    
+  }
+
+  &-link {
+    @media screen and (max-width: 766px) {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+
+      color: #757575;
+
+      position: absolute;
+      top:645px;
+    }
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primery-text-color;
+
+    &__phone {
+      @media screen and (max-width: 766px) {
+        color: $accent-color;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+
+        letter-spacing: 0.02em;
+
+        position: absolute;
+        top:570px;
+      }
+    }
   }
   &-item__mrg {
     @media screen and (min-width: 1200px) {
@@ -29,26 +68,15 @@
   }
 
   @media screen and (min-width: 768px) {
-   position: absolute;
-   top:15px;
-   right: 0;
+    position: absolute;
+    top: 15px;
+    right: 0;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    top:25px;
+    top: 25px;
   }
-}
-
-.link {
-  text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primery-text-color;
 }
 
 .link:hover,

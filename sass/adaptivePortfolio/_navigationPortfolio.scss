@@ -1,0 +1,111 @@
+.navigation {
+    @media screen and (max-width: 767px) {
+       display: none;
+       z-index: 1;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+  
+      padding-top: 50px;
+      padding-left: 40px;
+      
+  
+      
+  
+      &.is-open {
+         display: block;
+        
+         background-color: $primery-White-color;
+  
+         
+      }
+    }
+  
+  
+    &-list {
+      @extend %list;
+      display: block;
+      @media screen and (max-width: 766px) {
+      }
+  
+      @media screen and (min-width: 767px) {
+        display: flex;
+        margin-right: 250px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        margin-right: 650px;
+      }
+    }
+    &-item {
+      @media screen and (max-width: 766px) {
+        margin-bottom: 50px;
+      }
+    }
+    @media screen and (min-width: 767px) {
+      &-item:not(:first-child) {
+        margin-left: 50px;
+      }
+    }
+    &-link {
+      @media screen and (max-width: 766px) {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+  
+        color: #212121;
+      }
+  
+      text-decoration: none;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $primery-text-color;
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+  
+    &-link_active {
+      display: inline-block;
+      color: $accent-color;
+      margin-right: 0;
+  
+      @media screen and (min-width: 767px) {
+        &:after {
+          display: block;
+          content: "";
+  
+          width: 100%;
+          height: 5px;
+  
+          background-color: $accent-color;
+          border-radius: 3px;
+          margin-top: 25px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  
+    @media screen and (min-width: 1200px) {
+    }
+  }
+  

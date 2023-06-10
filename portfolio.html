@@ -15,52 +15,98 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/mainPortfolio.min.css" />
+    <link rel="stylesheet" href="./css/adaptivePortfolio.min.css" />
   </head>
   <body>
-    <header class="">
+    <header class="main-header">
       <div class="header">
-        <nav class="header-navigation">
-          <a href="" class="logo">Web<span class="studio">Studio</span></a>
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link header-link_active" href="./index.html"
-                >Студія</a
+        <a href="" class="logo">Web<span class="logo-studio">Studio</span></a>
+        <nav class="navigation" id="navigation" data-menu>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html">Студія</a>
+            </li>
+            <li class="navigation-item">
+              <a
+                class="navigation-link navigation-link_active"
+                href="./portfolio.html"
+                >Портфоліо</a
               >
             </li>
-            <li class="header-item">
-              <a class="header-link" href="./portfolio.html">Портфоліо</a>
-            </li>
 
-            <li class="header-item">
-              <a class="header-link" href="">Контакти</a>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="contact">
+            <li class="contact-item contact-item__mrg">
+              <div class="contact-svglink">
+                <a href="" class="contact-link">
+                  <svg class="contact-icon">
+                    <use href="./image/symbol-defs.svg#iconmail"></use>
+                  </svg>
+                </a>
+                <a href="mailto:info@devstudio.com" class="contact-link"
+                  >info@devstudio.com</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="contact-svglink">
+                <a href="" class="link-phone">
+                  <svg class="contact-icon">
+                    <use href="./image/symbol-defs.svg#iconsmartphone"></use>
+                  </svg>
+                </a>
+                <a
+                  href="tel:+380961111111"
+                  class="contact-link contact-link__phone"
+                >
+                  +38 096 111 11 11</a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul class="socialNetworks">
+            <li class="socialNetworks-item">
+              <a class="socialNetworks-link">Instagram</a>
+            </li>
+            <li class="socialNetworks-item socialNetworks-item__smallblock">
+              <a class="socialNetworks-link">Twitter</a>
+            </li>
+            <li class="socialNetworks-item">
+              <a class="socialNetworks-link">Facebook</a>
+            </li>
+            <li class="socialNetworks-item socialNetworks-item__smallblocktwo">
+              <a class="socialNetworks-link">LinkedIn</a>
             </li>
           </ul>
         </nav>
-        <ul class="contact">
-          <li class="contact-item contact-item__mrg">
-            <div class="contact-svglink">
-              <a href="" class="link">
-                <svg class="contact-icon">
-                  <use href="./image/symbol-defs.svg#iconmail"></use>
-                </svg>
-              </a>
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </div>
-          </li>
-          <li>
-            <div class="contact-svglink">
-              <a href="" class="link">
-                <svg class="contact-icon">
-                  <use href="./image/symbol-defs.svg#iconsmartphone"></use>
-                </svg>
-              </a>
-              <a href="tel:+380961111111" class="link"> +38 096 111 11 11</a>
-            </div>
-          </li>
-        </ul>
+
+        <button
+          class="header-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation"
+          data-menu-button
+        >
+          <svg
+            aria-lebel="Переключатель мобильного меню"
+            height="16"
+            width="24"
+          >
+            <use
+              class="icon-menu"
+              href="./image/modalSvg/symbol-defs.svg#iconmenu"
+            ></use>
+
+            <use
+              class="icon-close"
+              href="./image/modalSvg/symbol-defs.svg#iconclose"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -68,34 +114,68 @@
       <section>
         <div class="conteyner">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="navigation">
+          <ul class="navigationPortfolio">
             <li>
-              <button type="button" class="navigation-button">Усі</button>
+              <button type="button" class="navigationPortfolio-button">
+                Усі
+              </button>
+            </li>
+            <li class="navigationPortfolio-item">
+              <button type="button" class="navigationPortfolio-button">
+                Веб-сайти
+              </button>
             </li>
             <li>
-              <button type="button" class="navigation-button">Веб-сайти</button>
+              <button type="button" class="navigationPortfolio-button">
+                Додатки
+              </button>
+            </li>
+
+            <li>
+              <button type="button" class="navigationPortfolio-button">
+                Дизайн
+              </button>
             </li>
             <li>
-              <button type="button" class="navigation-button">Додатки</button>
-            </li>
-            <li>
-              <button type="button" class="navigation-button">Дизайн</button>
-            </li>
-            <li>
-              <button type="button" class="navigation-button">Маркетинг</button>
+              <button type="button" class="navigationPortfolio-button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <ul class="photoSet">
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(1).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfirst_photo_phone.jpg   1x,
+                      ./adaptive_images/imgfirst_photo_phon_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfirst_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgfirst_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfirst_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgfirst_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgfirst_photo_tablet.jpg"
+                    alt="UI_Designer"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -110,13 +190,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(2).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgsecond_photo_phone.jpg    1x,
+                      ./adaptive_images/imgsecond_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgimgsecond_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgimgsecond_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgimgsecond_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgimgsecond_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgimgsecond_photo_tablet.jpg"
+                    alt="UI_Designer"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -131,13 +234,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(3).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgimgthird_photo_phone.jpg    1x,
+                      ./adaptive_images/imgimgthird_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgimgthird_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgimgthird_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgimgthird_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgimgthird_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgimgthird_photo_tablet.jpg"
+                    alt="UI_Designer"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -152,13 +278,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(4).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfourth_photo_phone.jpg    1x,
+                      ./adaptive_images/imgfourth_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfourth_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgfourth_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfourth_photo_Desktop.jpg    1x,
+                      ./adaptive_images/imgfourth_photo_Desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgfourth_photo_tablet.jpg"
+                    alt="UI_Designer"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -173,13 +322,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(5).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfives_photo_phone.jpg    1x,
+                      ./adaptive_images/imgfives_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfives_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgfives_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgfives_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgfives_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgfives_photo_tablet.jpg"
+                    alt="fives_photo"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,13 +366,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(6).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgsixth_photo_phone.jpg    1x,
+                      ./adaptive_images/imgsixth_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgsixth_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgsixth_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgsixth_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgsixth_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgsixth_photo_tablet.jpg"
+                    alt="sixth_photo"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -215,13 +410,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(7).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgseventh_photo_phone.jpg    1x,
+                      ./adaptive_images/imgseventh_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgseventh_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgseventh_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgseventh_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgseventh_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgseventh_photo_tablet.jpg"
+                    alt="sixth_photo"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,13 +454,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(8).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgeighth_photo_phone.jpg    1x,
+                      ./adaptive_images/imgeighth_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgeighth_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgeighth_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgeighth_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgeighth_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgeighth_photo_tablet.jpg"
+                    alt="sixth_photo"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -257,13 +498,36 @@
             </li>
             <li class="photoSet-item">
               <div class="photoSet-div">
-                <img
-                  class="img"
-                  src="./image/portfolio(9).png"
-                  alt=""
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./adaptive_images/imgnineth_photo_phone.jpg    1x,
+                      ./adaptive_images/imgnineth_photo_phone_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./adaptive_images/imgnineth_photo_tablet.jpg    1x,
+                      ./adaptive_images/imgninefh_photo_tablet_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./adaptive_images/imgnineth_photo_desktop.jpg    1x,
+                      ./adaptive_images/imgnineth_photo_desktop_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="teamList-photo"
+                    src="./adaptive_images/imgnineth_photo_tablet.jpg"
+                    alt="sixth_photo"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="lorem">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -284,89 +548,94 @@
     <!-- Футер-->
     <footer class="footer">
       <div class="footer-conteyner">
-        <div>
-          <p class="footerLogo">
-            Web<span class="footerLogo-studio">Studio</span>
-          </p>
-          <address>
-            <p class="footerLogo-address">м. Київ, пр-т Лесі Українки, 26</p>
+        <div class="tabletFlex">
+          <div>
+            <p class="footerLogo">
+              Web<span class="footerLogo-studio">Studio</span>
+            </p>
+            <address>
+              <p class="footerLogo-address">м. Київ, пр-т Лесі Українки, 26</p>
 
-            <ul class="addressList">
-              <li>
-                <a class="addressList-item" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <ul class="addressList">
+                <li>
+                  <a class="addressList-item" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="addressList-item margin" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join-text">Приєднуйтесь</p>
+            <ul class="linkList">
+              <li class="linkList-icon">
+                <a
+                  href=" https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><svg class="linkList-svg">
+                    <use href="./image/symbol-defs.svg#iconinstagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="addressList-item margin" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li class="linkList-icon">
+                <a
+                  href=" https://twitter.com/i/flow/login"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><svg class="linkList-svg">
+                    <use href="./image/symbol-defs.svg#icontwitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="linkList-icon">
+                <a
+                  href="https://ru-ru.facebook.com/login.php"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><svg class="linkList-svg">
+                    <use href="./image/symbol-defs.svg#iconfacebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="linkList-icon">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
+                  <svg class="linkList-svg">
+                    <use href="./image/symbol-defs.svg#iconlinkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="join">
-          <p class="join-text">Приєднуйтесь</p>
-          <ul class="linkList">
-            <li class="linkList-icon">
-              <a
-                href=" https://www.instagram.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><svg class="linkList-svg">
-                  <use href="./image/symbol-defs.svg#iconinstagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="linkList-icon">
-              <a
-                href=" https://twitter.com/i/flow/login"
-                target="_blank"
-                rel="noreferrer noopener"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><svg class="linkList-svg">
-                  <use href="./image/symbol-defs.svg#icontwitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="linkList-icon">
-              <a
-                href="https://ru-ru.facebook.com/login.php"
-                target="_blank"
-                rel="noreferrer noopener"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><svg class="linkList-svg">
-                  <use href="./image/symbol-defs.svg#iconfacebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="linkList-icon">
-              <a
-                href="https://ua.linkedin.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="linkList-svg">
-                  <use href="./image/symbol-defs.svg#iconlinkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="formDiv">
           <form class="formDiv-form" action="">
-            <label for="email">Підпишіться на розсилку</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <label for="footeremail">Підпишіться на розсилку</label>
+            <input type="footeremail" name="footeremail" id="footeremail" placeholder="E-mail" />
           </form>
           <button class="formDiv-button">Підписатися</button>
         </div>
       </div>
     </footer>
+
+    <script src="./JS/menuOpen.js"></script>
   </body>
 </html>

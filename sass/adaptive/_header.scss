@@ -8,35 +8,36 @@
 
 .header {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
- margin: auto;
-  background-color: thistle;
-
   justify-content: space-between;
+  margin: auto;
+
+  align-items: baseline;
+  padding-top: 26px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position: relative;
+
+  outline: 1px solid tomato;
 
   @media screen and (min-width: 480px) {
     width: 450px;
 
+    padding-right: 5px;
+
     position: relative;
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 25px;
   }
 
   @media screen and (min-width: 768px) {
     height: 80px;
-
     width: 738px;
-
-    padding-bottom: 0;
   }
-
-  
-
-
 
   @media screen and (min-width: 1200px) {
     width: 1170px;
-
-    margin-left: auto;
-    margin-right: auto;
   }
 }

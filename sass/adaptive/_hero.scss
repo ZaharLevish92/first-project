@@ -1,0 +1,166 @@
+/* Герой */
+.hero {
+  background-color: $title-text-color;
+  max-width: 1660px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../adaptive_images/Header\ imgbackground_phone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../adaptive_images/Header\ imgbackground_phone_2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../adaptive_images/Header\ imgbackground_tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url("../adaptive_images/Header\ imgbackground_tablet_2x.jpg");
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../adaptive_images/Imgbackground_desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url("../adaptive_images/Imgbackground_desktop_2x.jpg");
+      }
+    }
+    
+  }
+
+  &-conteyner {
+    width: 100%;
+
+    padding-top: 125px;
+
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 400px;
+
+      margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 738px;
+    }
+  }
+
+  &-title {
+    color: $primery-White-color;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1, 75;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      color: $primery-White-color;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+/* Особливості  */
+.particularitys.list {
+  display: flex;
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+.particularitys .item {
+  margin-right: 30px;
+}
+.block {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  justify-content: space-around;
+}
+.icon-antenna-one {
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+}
+.icon-clock-one {
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+}
+
+.icon-comp {
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+}
+.iconastronaut {
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+}
+
+.list .title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 0;
+}

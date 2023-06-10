@@ -1,0 +1,132 @@
+.ourteam {
+  background: #f5f4fa;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px; 
+}
+
+  
+
+  &-conteyner {
+    width: 100%;
+    text-align: center;
+    outline: 1px solid tomato;
+
+    margin: auto;
+
+    @media screen and (max-width: 767px) {
+      padding: 15px;
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1170px;
+    }
+  }
+  &-title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.teamList {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    width: 100%;
+
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 3%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 2);
+
+      margin: 15px;
+    }
+  }
+
+  &-photo {
+    width: 100%;
+  }
+
+  &-title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  &-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    display: block;
+  }
+}
+
+.menu {
+  @extend %list;
+  display: flex;
+  background-color: transparent;
+  width: 207px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    fill: #afb1b8;
+    background-color: transparent;
+  }
+  &-link:not(:nth-last-child(4n)) {
+    margin-right: 10px;
+  }
+  &-link:hover {
+    fill: $primery-White-color;
+    background-color: $accent-color;
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+}

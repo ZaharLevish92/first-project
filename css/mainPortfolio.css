@@ -49,6 +49,10 @@ body {
   margin-bottom: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

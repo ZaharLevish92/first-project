@@ -1,0 +1,49 @@
+.socialNetworks {
+  @extend %list;
+  display: flex;
+  width: 40%;
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 450px) {
+    width: 100%;
+  }
+
+
+  @media screen and (min-width: 766px) {
+    display: none;
+  }
+  &-item {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid black;
+
+    &:last-child {
+      border-right: none;
+    }
+    &__smallblock{
+      width: 70px;
+    }
+    &__smallblocktwo{
+      width: 90px;
+    }
+  }
+  &-link {
+    text-decoration: none;
+    color: $accent-color;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+  }
+}

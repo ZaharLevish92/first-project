@@ -1,0 +1,125 @@
+.client-conteyner {
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid tomato;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.client-title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.clientList {
+  @extend %list;
+  display: flex;
+
+  gap: 30px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-top: 60px;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+
+  &-item {
+    display: block;
+    height: 92px;
+    width: calc((100% - 30px) / 2);
+
+    border-radius: 10px;
+    border: 1px solid #afb1b8;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+    }
+  
+
+    &:hover {
+      border-color: $accent-color;
+    }
+  }
+
+  &-icon {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 53px;
+    height: 49px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill: $accent-color;
+    }
+  }
+
+  &-iconfour {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 105px;
+    height: 90px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill: $accent-color;
+    }
+  }
+
+  &-iconfive {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 95px;
+    height: 65px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill: $accent-color;
+    }
+  }
+
+  &-iconsix {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 105px;
+    height: 90px;
+    fill: #afb1b8;
+
+    .clientList-item:hover & {
+      fill: $accent-color;
+    }
+  }
+}
